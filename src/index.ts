@@ -1,5 +1,7 @@
-const favoriteFruits: string[] = ['apple', 'strawberry', 'orange'];
+import { forwardProxyProgram } from './forward-proxy';
 
-function addFruit(fruit: string) {
-  favoriteFruits.push(fruit);
-}
+const main = () => {
+  forwardProxyProgram();
+};
+
+main();

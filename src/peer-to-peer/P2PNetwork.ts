@@ -31,7 +31,6 @@ class P2PNetwork {
     console.log(
       `Peer ${requestingPeer.id} is attempting to download the file...`,
     );
-    const missingChunks = new Set<number>();
     this.fileChunks.forEach((chunk, chunkId) => {
       const sourcePeer = this.peers.find(peer => peer.hasChunk(chunkId));
       if (sourcePeer) {
